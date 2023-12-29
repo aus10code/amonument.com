@@ -2,17 +2,13 @@
 <html>
   <script type="module">
     import PhotoSwipeLightbox from "/photoswipe/dist/photoswipe-lightbox.esm.js";
-
     const lightbox = new PhotoSwipeLightbox({
-      // may select multiple "galleries"
       gallery: "#gallery--getting-started",
-      // Elements within gallery (slides)
       children: "a",
       pswpModule: () => import("/photoswipe/dist/photoswipe.esm.js"),
     });
     lightbox.init();
   </script>
-
   <head> </head>
   <body>
     <div
@@ -41,6 +37,8 @@
         <img
           src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-200.jpg"
           alt=""
+          width="100"
+          height="100"
         />
         Cropped
       </a>
