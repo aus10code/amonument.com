@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Upload</title>
+  </head>
+  <body>
+    <!-- header/main/footer for screen readers -->
+    <!-- <header></header> -->
+    <!-- <main> -->
+    <!-- <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        id="contact-form"
+      >
+        <input
+          type="hidden"
+          name="access_key"
+          value="77f638e7-1561-4874-b099-ef0bdb757d0f"
+        />
+        <input type="hidden" name="from_name" value="Contact Form" />
+
+        <input type="text" name="name" required />
+        <input type="email" name="email" required />
+        <textarea name="message" required></textarea>
+        <div class="h-captcha" data-captcha="true"></div>
+        <button type="submit">Submit Form</button>
+      </form> -->
+
+    <form
+      class="container"
+      action="https://api.web3forms.com/submit"
+      method="POST"
+      id="contact-form"
+    >
+      <input
+        type="hidden"
+        name="access_key"
+        value="77f638e7-1561-4874-b099-ef0bdb757d0f"
+      />
+      <input type="hidden" name="from_name" value="Contact Form" />
+      <input type="hidden" name="subject" value="Contact Form Submission" />
+      <input type="checkbox" name="botcheck" id="" style="display: none" />
+
+      <div class="row">
+        <h1>contact us</h1>
+      </div>
+      <div class="row">
+        <h4 style="text-align: center">
+          You will hear back from the owner, designer, and engraver himself!
+        </h4>
+      </div>
+      <div class="row input-container">
+        <div class="col-xs-12">
+          <div class="styled-input wide">
+            <input type="text" name="name" required />
+            <label>Name</label>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="styled-input">
+            <input type="email" name="email" required />
+            <label>Email</label>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="styled-input" style="float: left">
+            <input type="phone" name="phone" required />
+            <label>Phone Number</label>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <label>Preferred Contact Method:</label>
+          <div class="radio-group col-md-6">
+            <input type="radio" id="option-one" name="selector" checked /><label
+              for="option-one"
+              >Email</label
+            >
+            <input type="radio" id="option-two" name="selector" /><label
+              for="option-two"
+              >Phone</label
+            >
+          </div>
+        </div>
+
+        <div class="col-xs-12">
+          <div class="styled-input wide">
+            <textarea name="message" required></textarea>
+            <label>Message</label>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <span class="h-captcha col-md-6" data-captcha="true"></span>
+        </div>
+
+        <div class="col-xs-12">
+          <button type="submit" class="btn-lrg submit-btn">Send Message</button>
+        </div>
+      </div>
+    </form>
+    <!-- </main>
+    <footer></footer> -->
+    <link rel="stylesheet" href="/site.css" />
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    <script>
+      const form = document.getElementById("contact-form");
+
+      form.addEventListener("submit", function (e) {
+        const hCaptcha = form.querySelector(
+          "textarea[name=h-captcha-response]"
+        ).value;
+
+        if (!hCaptcha) {
+          e.preventDefault();
+          alert("Please fill out captcha field");
+          return;
+        }
+      });
+    </script>
+  </body>
+</html>
