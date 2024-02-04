@@ -1,23 +1,23 @@
 <!doctype html>
 <html>
-  <script type="module">
-    import PhotoSwipeLightbox from "/photoswipe/dist/photoswipe-lightbox.esm.js";
-    const lightbox = new PhotoSwipeLightbox({
-      gallery: "#gallery",
-      children: "a",
-      pswpModule: () => import("/photoswipe/dist/photoswipe.esm.js"),
-    });
-    lightbox.init();
-  </script>
-  <header>
-    <nav class="menu-container">
-      <!-- burger menu -->
-      <input type="checkbox" aria-label="Toggle menu" />
-      <span></span>
-      <span></span>
-      <span></span>
-      <!-- logo -->
-      <!-- <a href="#" class="menu-logo">
+<script type="module">
+  import PhotoSwipeLightbox from "/photoswipe/dist/photoswipe-lightbox.esm.js";
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: "#gallery",
+    children: "a",
+    pswpModule: () => import("/photoswipe/dist/photoswipe.esm.js"),
+  });
+  lightbox.init();
+</script>
+<header>
+  <nav class="menu-container">
+    <!-- burger menu -->
+    <input type="checkbox" aria-label="Toggle menu" />
+    <span></span>
+    <span></span>
+    <span></span>
+    <!-- logo -->
+    <!-- <a href="#" class="menu-logo">
         <img
           width="182"
           height="45"
@@ -26,7 +26,7 @@
         />
       </a> -->
 
-      <!-- <a href="#" class="menu-logo">
+    <!-- <a href="#" class="menu-logo">
         <img
           width="304"
           height="24"
@@ -35,14 +35,18 @@
         />
       </a> -->
 
-      <a href="#" class="menu-logo">
+    <!-- Full Size -->
+    <!-- <a href="#" class="menu-logo">
         <img
           width="614"
           height="48"
           src="/images/SVG/whiteWide.svg"
           alt="My Awesome Website"
         />
-      </a>
+      </a> -->
+
+    <a href="#" class="menu-logo">
+      <img width="307" height="24" src="/images/SVG/whiteWide.svg" alt="My Awesome Website" />
 
       <!-- menu items -->
       <div class="menu">
@@ -60,87 +64,56 @@
           </li>
         </ul>
       </div>
-    </nav>
-  </header>
-  <head> </head>
-  <body>
-    <div
-      class="pswp-gallery pswp-gallery--single-column"
-      id="gallery"
-      style="padding-top: 200px; z-index: 10"
-    >
-      <div class="centered-container">
-        <a
-          href="/images/Portrait-24x12-9-grayscale-2560x-1281y-Q6.jpg"
-          data-pswp-width="2560"
-          data-pswp-height="1281"
-          target="_blank"
-        >
-          <img
-            class="gallery-image"
-            srcset="
+  </nav>
+</header>
+
+<head> </head>
+
+<body>
+  <div class="pswp-gallery pswp-gallery--single-column" id="gallery" style="padding-top: 200px; z-index: 10">
+    <div class="centered-container">
+      <a href="/images/Portrait-24x12-9-grayscale-2560x-1281y-Q6.jpg" data-pswp-width="2560" data-pswp-height="1281"
+        target="_blank">
+        <img class="gallery-image" srcset="
               /images/Portrait-24x12-9-grayscale-640x-321y-Q4.jpg 640w,
               /images/Portrait-24x12-9-grayscale-920x-460y-Q4.jpg 920w
-            "
-            sizes="(max-width: 640px) 640px,
-         920px"
-            src="/images/Portrait-24x12-9-grayscale-920x-460y-Q4.jpg"
-            alt=""
-          />
-        </a>
-      </div>
+            " sizes="(max-width: 640px) 640px,
+         920px" src="/images/Portrait-24x12-9-grayscale-920x-460y-Q4.jpg" alt="" />
+      </a>
+    </div>
 
-      <div class="centered-container">
-        <hr />
-      </div>
+    <div class="centered-container">
+      <hr />
+    </div>
 
-      <div class="centered-container">
-        <a
-          href="/images/Portrait-24x12-7-grayscale-2560x-1281y-Q6.jpg"
-          data-pswp-width="2560"
-          data-pswp-height="1281"
-          target="_blank"
-        >
-          <img
-            class="gallery-image"
-            srcset="
+    <div class="centered-container">
+      <a href="/images/Portrait-24x12-7-grayscale-2560x-1281y-Q6.jpg" data-pswp-width="2560" data-pswp-height="1281"
+        target="_blank">
+        <img class="gallery-image" srcset="
               /images/Portrait-24x12-7-grayscale-640x-320y-Q4.jpg 640w,
               /images/Portrait-24x12-7-grayscale-920x-460y-Q4.jpg 920w
-            "
-            sizes="(max-width: 640px) 640px,
-         920px"
-            src="/images/Portrait-24x12-7-grayscale-920x-460y-Q4.jpg"
-            alt=""
-          />
-        </a>
-      </div>
+            " sizes="(max-width: 640px) 640px,
+         920px" src="/images/Portrait-24x12-7-grayscale-920x-460y-Q4.jpg" alt="" />
+      </a>
+    </div>
 
-      <div class="centered-container">
-        <hr />
-      </div>
+    <div class="centered-container">
+      <hr />
+    </div>
 
-      <div class="centered-container">
-        <a
-          href="/images/Portrait-24x12-6-grayscale-2560x-853y-Q6.jpg"
-          data-pswp-width="2560"
-          data-pswp-height="853"
-          target="_blank"
-        >
-          <img
-            class="gallery-image"
-            srcset="
+    <div class="centered-container">
+      <a href="/images/Portrait-24x12-6-grayscale-2560x-853y-Q6.jpg" data-pswp-width="2560" data-pswp-height="853"
+        target="_blank">
+        <img class="gallery-image" srcset="
               /images/Portrait-24x12-6-grayscale-640x-214y-Q4.jpg 640w,
               /images/Portrait-24x12-6-grayscale-920x-307y-Q4.jpg 920w
-            "
-            sizes="(max-width: 640px) 640px,
-         920px"
-            src="/images/Portrait-24x12-6-grayscale-920x-307y-Q4.jpg"
-            alt=""
-          />
-        </a>
-      </div>
+            " sizes="(max-width: 640px) 640px,
+         920px" src="/images/Portrait-24x12-6-grayscale-920x-307y-Q4.jpg" alt="" />
+      </a>
     </div>
-  </body>
-  <link rel="stylesheet" href="photoswipe/dist/photoswipe.css" />
-  <link rel="stylesheet" href="/site.css" />
+  </div>
+</body>
+<link rel="stylesheet" href="photoswipe/dist/photoswipe.css" />
+<link rel="stylesheet" href="/site.css" />
+
 </html>
